@@ -6,8 +6,9 @@ export default class ResultReporter {
         firebaseClient = new FirebaseClient();
     }
 
-    async reportResults(data) {
-        await firebaseClient.writeAsync(data, "bowling/genka");
+    async reportResults(data, names) {
+        let path = "bowling/"+(new Date()).toLocaleDateString("ru-RU") + "/" + names + "/tests";
+        await firebaseClient.writeAsync(data, path);
         firebaseClient.close();
     }
 }

@@ -1,9 +1,10 @@
 import Game from "./BowlingGame"
 
 export default function BowlingGameTests() {
-    it("success test", function () {
+    it("Have zero score before any rolls", function () {
         let game = new Game();
-        game.Roll(5);
-        console.log("test passed");
+        game.GetScore();
     });
 }
+
+export const Names = "ENTER YOUR NAME HERE";
