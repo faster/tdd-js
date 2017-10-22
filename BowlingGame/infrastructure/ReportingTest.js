@@ -1,4 +1,4 @@
-import * as Tests from "./BowlingGameTests";
+import * as Tests from "./../BowlingGameTests";
 import ResultReporter from "./ResultReporter";
 import jsonfile from "jsonfile";
 import fs from "fs";
